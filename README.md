@@ -1,21 +1,26 @@
-📱 iPhone Tariff Simulator
-This Shiny dashboard explores the cost impact of imposing tariffs on iPhones manufactured in China versus building them in the U.S. It provides visual simulations based on tariffs, inflation, supply chain rebuilds, and other economic penalties. It also includes maps and regional cost comparisons.
+### 📱 iPhone Tariff Simulator
 
-🧪 Features
-📈 Cost simulation with adjustable tariff percentages.
+This Shiny app simulates the impact of tariffs and economic factors on the cost of manufacturing iPhones in China versus the U.S. It includes visualizations for cost comparisons, state-level manufacturing cost indexes, and a map of key Chinese factories.
 
-📊 U.S. state-level cost comparisons.
+---
 
-🌍 Factory locations on a map.
+#### 🛠️ Installation
 
-🧮 Real-time impact calculation for multiple economic scenarios.
+Make sure you have **R** and **RStudio** installed. Then install the required R packages:
 
-🚀 Launch the App
-Run this R script in an environment with Shiny installed:
+```r
+install.packages(c("shiny", "shinydashboard", "ggplot2", "dplyr", "leaflet"))
+```
 
-r
-Copy
-Edit
+---
+
+#### 🚀 How to Run
+
+Save the script below as `app.R` and run it in RStudio:
+
+```r
+# app.R
+
 library(shiny)
 library(shinydashboard)
 library(ggplot2)
@@ -142,15 +147,27 @@ server <- function(input, output) {
 }
 
 shinyApp(ui, server)
-📦 Requirements
-Install these packages in R:
+```
 
-r
-Copy
-Edit
-install.packages(c("shiny", "shinydashboard", "ggplot2", "dplyr", "leaflet"))
-✨ Author
-Developed by a data analyst passionate about U.S.-China trade dynamics and interactive economic visualizations.
+---
+
+#### 📊 Features
+
+- **Tariff Impact Simulation**  
+  Analyze how varying tariff levels affect iPhone prices.
+
+- **Cost Factor Adjustments**  
+  Add inflation, supply chain rebuild, and policy penalties.
+
+- **State-by-State Comparison**  
+  Visualizes cost index for U.S. manufacturing states.
+
+- **Factory Mapping**  
+  Interactive map of major iPhone production sites in China.
+
+---
+
+Let me know if you'd like this saved as a `.md` file for GitHub!
 
 
 
