@@ -150,5 +150,7 @@ Copy
 Edit
 install.packages(c("shiny", "shinydashboard", "ggplot2", "dplyr", "leaflet"))
 ✨ Author
-Developed by a data analyst Maurice McDonald[https://github.com](https://github.com/emcdo411) passionate about U.S.-China trade dynamics and interactive economic visualizations.
+Developed by a data analyst passionate about U.S.-China trade dynamics and interactive economic visualizations.
+
+
 
